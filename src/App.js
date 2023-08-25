@@ -2,7 +2,7 @@
 import "./App.css";
 import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import TokenCheck from "./components/TokenCheck";
 import Error from './components/Error';
 
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<TokenCheck Component={Login} />} />
         <Route path="/dashboard" element={<TokenCheck Component={Dashboard} />} />
-        <Route path="*" element={<Error/>} />
+        {/* <Route path="*" element={<Error/>} /> */}
         </Routes>
     </BrowserRouter>
   );
