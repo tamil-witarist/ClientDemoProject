@@ -22,7 +22,7 @@ const Dashboard = () => {
       .catch((error) => {
         console.log(error);
       });
-  }, []);
+  }, [config]);
 
   const handleClick = () => {
     alert("confirm Logout");
@@ -40,11 +40,11 @@ const Dashboard = () => {
       <div class="container">
         <div class="sidebar">
           <nav>
-            <a href="#">
+          
               Wit<span>arist</span>
-            </a>
+           
             <ul>
-              <li class="active"><a href="">Dashboard</a></li>
+              <li class="active">Dashboard</li>
             </ul>
           </nav>
         </div>
