@@ -4,7 +4,6 @@ import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import TokenCheck from "./components/TokenCheck";
-import Error from './components/Error';
 
 function App() {
   return (
